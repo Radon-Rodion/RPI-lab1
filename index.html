@@ -6,25 +6,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/styles.css" type="text/css">
-	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!--Либа с иконками-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!--Либа с иконками-->
 </head>
 <body>
 
 <header class="header">
     <div class="container">
-        <div class="header-inner">
-            <img src="images/logo.png" alt="logo"/>
+        <div class="header_container">
+            <div class="header_inner">
+                <img src="images/logo.png" alt="logo"/>
 
-            <nav class="nav">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">Domain</a>
-                <a class="nav-link" href="#">Hosting</a>
-                <a class="nav-link" href="#">Clients</a>
-                <a class="nav-link" href="#">Blog</a>
-                <a class="nav-link" href="#">Support</a>
-            </nav>
+                <nav class="nav">
+                    <a class="nav_link" href="#">Home</a>
+                    <a class="nav_link" href="#">Domain</a>
+                    <a class="nav_link" href="#">Hosting</a>
+                    <a class="nav_link" href="#">Clients</a>
+                    <a class="nav_link" href="#">Blog</a>
+                    <a class="nav_link" href="#">Support</a>
+                </nav>
+            </div>
+            <hr class="intro_line">
         </div>
-
     </div>
 </header>
 
@@ -40,37 +42,41 @@
 </div>
 
 <div class="diagonal_btns_block">
-	<a class="diagonal_btn left_diagonal_btn" href=""><br><br>LOGIN</a>
-	<a class="diagonal_btn right_diagonal_btn" href="."><br><br>REGISTER</a>
+    <div class="diagonal_btn left_diagonal_btn">
+        <a href="" class="btn_link"><br><br>LOGIN</a>
+    </div>
+    <div class="diagonal_btn right_diagonal_btn">
+        <a href="" class="right_btn_link"><br><br>REGISTER</a>
+    </div>
 </div>
 
 <div class="new_domain">
-	<div class="new_domain_inner">
-		<h3 class="new_domain_title">Would you like to buy a new domain ?</h3>
-		<h3 class="new_domain_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen</h3>
-		<form class="new_domain_fullname">
-			<label for="www" class = "new_domain_fullname_www">www.</label>
-			<input type="text" name="basename" class="new_domain_fullname_namefield" placeholder="What do you want?">
-			<select class="new_domain_fullname_type_select">
-				<option>.com</option>
-				<option>.net</option>
-			</select>
-		</form>
-		<table class="new_domain_type_table">
-			<tr class="new_domain_type_table_row">
-				<th class="new_domain_type_table_cell left_cell">.COM</th>
-				<th class="new_domain_type_table_cell left_cell">1 Year</th>
-				<th class="new_domain_type_table_cell left_cell">$9.00 USD</th>
-				<th class="new_domain_type_table_cell">Transfer Price No</th>
-			</tr>
-			<tr class="new_domain_type_table_row">
-				<th class="new_domain_type_table_cell left_cell bot_cell">.NET</th>
-				<th class="new_domain_type_table_cell left_cell bot_cell">1 Year</th>
-				<th class="new_domain_type_table_cell left_cell bot_cell">$9.00 USD</th>
-				<th class="new_domain_type_table_cell bot_cell">Transfer Price No</th>
-			</tr>
-		</table>
-	</div>
+    <div class="new_domain_inner">
+        <h3 class="new_domain_title">Would you like to buy a new domain ?</h3>
+        <h3 class="new_domain_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen</h3>
+        <form class="new_domain_fullname">
+            <label for="www" class="new_domain_fullname_www">www.</label>
+            <input type="text" name="basename" class="new_domain_fullname_namefield" placeholder="What do you want?">
+            <select class="new_domain_fullname_type_select">
+                <option>.com</option>
+                <option>.net</option>
+            </select>
+        </form>
+        <table class="new_domain_type_table">
+            <tr class="new_domain_type_table_row">
+                <th class="new_domain_type_table_cell left_cell">.COM</th>
+                <th class="new_domain_type_table_cell left_cell">1 Year</th>
+                <th class="new_domain_type_table_cell left_cell">$9.00 USD</th>
+                <th class="new_domain_type_table_cell">Transfer Price No</th>
+            </tr>
+            <tr class="new_domain_type_table_row">
+                <th class="new_domain_type_table_cell left_cell bot_cell">.NET</th>
+                <th class="new_domain_type_table_cell left_cell bot_cell">1 Year</th>
+                <th class="new_domain_type_table_cell left_cell bot_cell">$9.00 USD</th>
+                <th class="new_domain_type_table_cell bot_cell">Transfer Price No</th>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <div class="packages">
@@ -334,49 +340,49 @@
                 </section>
 
 <footer class="footer">
-	<div class="container">
-        <div class="header-inner">
-            <img src="images/logo.png" alt="logo"/>
+    <div class="container">
+        <div class="footer_menu">
+            <img src="images/logo.png" class = "footer_menu_image" alt="logo"/>
 
-            <nav class="nav">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">Domain</a>
-                <a class="nav-link" href="#">Hosting</a>
-                <a class="nav-link" href="#">Clients</a>
-                <a class="nav-link" href="#">Blog</a>
-                <a class="nav-link" href="#">Support</a>
+            <nav class="footer_nav">
+                <a class="footer_nav_link" href="#">HOME</a>
+                <a class="footer_nav_link" href="#">ABOUT US</a>
+                <a class="footer_nav_link" href="#">BLOG</a>
+                <a class="footer_nav_link" href="#">POLICY</a>
+                <a class="footer_nav_link" href="#">CONTACT</a>
             </nav>
         </div>
-		<div class = "footer_bottom">
-		<div class = "footer_bottom_left">
-			Lorem ipsum dolor sit amet, consecteteeseurı<br>
-			adipiscing elit. Donec mollis commodoeesene<br>
-			que, non commodo risus volutpat vel.<br><br>
-			Design by <strong>Mert Can Eyriyer.</strong>
-		</div>
 
-		<div class = "footer_bottom_center">
-			<div class = "footer_bottom_center_oneColumn">
-				<a class = "footer_bottom_center_oneCell" href="">> Support</a>
-				<a class = "footer_bottom_center_oneCell" href="">> Account</a>
-				<a class = "footer_bottom_center_oneCell" href="">> Product Catalog</a>
-				<a class = "footer_bottom_center_oneCell" href="">> Shortcodes</a>
-			</div>
-			<div class = "footer_bottom_center_oneColumn">
-				<a class = "footer_bottom_center_oneCell" href="">> Site map</a>
-				<a class = "footer_bottom_center_oneCell" href="">> Whois Search</a>
-				<a class = "footer_bottom_center_oneCell" href="">> Web Mail</a>
-				<a class = "footer_bottom_center_oneCell" href="">> Find Domain</a>
-			</div>
-		</div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_left">
+                Lorem ipsum dolor sit amet, consecteteeseurı<br>
+                adipiscing elit. Donec mollis commodoeesene<br>
+                que, non commodo risus volutpat vel.<br><br>
+                Design by <strong>Mert Can Eyriyer.</strong>
+            </div>
 
-		<div class = "footer_bottom_right">
-			<i class="fa fa-phone" aria-hidden="true"></i> 0000-0000-0000<br>
-			<i class="fa fa-envelope" aria-hidden="true"></i> informationteam@ghost.com<br>
-			Lorem Ipsum Street, Lorem Avenue,<br>Lorem Ipsum
-		<div>
-	</div>
-    </div>
+            <div class="footer_bottom_center">
+                <div class="footer_bottom_center_oneColumn">
+                    <a class="footer_bottom_center_oneCell" href="">> Support</a>
+                    <a class="footer_bottom_center_oneCell" href="">> Account</a>
+                    <a class="footer_bottom_center_oneCell" href="">> Product Catalog</a>
+                    <a class="footer_bottom_center_oneCell" href="">> Shortcodes</a>
+                </div>
+                <div class="footer_bottom_center_oneColumn">
+                    <a class="footer_bottom_center_oneCell" href="">> Site map</a>
+                    <a class="footer_bottom_center_oneCell" href="">> Whois Search</a>
+                    <a class="footer_bottom_center_oneCell" href="">> Web Mail</a>
+                    <a class="footer_bottom_center_oneCell" href="">> Find Domain</a>
+                </div>
+            </div>
+
+            <div class="footer_bottom_right">
+                <i class="fa fa-phone" aria-hidden="true"></i> 0000-0000-0000<br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> informationteam@ghost.com<br>
+                Lorem Ipsum Street, Lorem Avenue,<br>Lorem Ipsum
+                <div>
+                </div>
+            </div>
 </footer>
 </body>
 </html>
