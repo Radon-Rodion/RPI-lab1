@@ -8,6 +8,83 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'Latoblack';
+    src: url('../fonts/Lato/Lato-Black.eot');
+    src: local('../fonts/Lato/Lato Black'), local('Lato-Black'),
+        url('../fonts/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Black.woff') format('woff'),
+        url('../fonts/Lato/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latothin';
+    src: url('../fonts/Lato/Lato-Thin.eot');
+    src: local('../fonts/Lato/Lato Thin'), local('Lato-Thin'),
+        url('../fonts/Lato/Lato-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Thin.woff') format('woff'),
+        url('../fonts/Lato/Lato-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latosemibold';
+    src: url('../fonts/Lato/Lato-Semibold.eot');
+    src: local('../fonts/Lato/Lato Semibold'), local('Lato-Semibold'),
+        url('../fonts/Lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Semibold.woff') format('woff'),
+        url('../fonts/Lato/Lato-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latoregular';
+    src: url('../fonts/Lato/Lato-Regular.eot');
+    src: local('../fonts/Lato/Lato Regular'), local('Lato-Regular'),
+        url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latolight';
+    src: url('../fonts/Lato/Lato-Light.eot');
+    src: local('../fonts/Lato/Lato Light'), local('Lato-Light'),
+        url('../fonts/Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Light.woff') format('woff'),
+        url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latoheavy';
+    src: url('../fonts/Lato/Lato-Heavy.eot');
+    src: local('../fonts/Lato/Lato Heavy'), local('Lato-Heavy'),
+        url('../fonts/Lato/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Heavy.woff') format('woff'),
+        url('../fonts/Lato/Lato-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latobold';
+    src: url('../fonts/Lato/Lato-bold.eot');
+    src: local('../fonts/Lato/Lato Bold'), local('Lato-Heavy'),
+        url('../fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 body {
     margin: 0;
 }
@@ -292,7 +369,7 @@ h1, h2, h3, h4 h5, h6 {
 	font-size: 16px;
     color: #d9d9d9;
 	width: 190px;
-	
+
 }
 
 .left_cell{
@@ -455,6 +532,341 @@ h1, h2, h3, h4 h5, h6 {
 	font-size: 12px;
 	font-weight: 100;
 	color: #959595;
+}
+
+/*About us*/
+
+.about-us {
+	height: 400px;
+	padding-top: 95px;
+	box-sizing: border-box;
+}
+
+.about-us-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	width: 1260px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.description-container {
+	width: 515px;
+	height: 200px;
+	border-right: 2px dotted #d4d4d4 ;
+}
+
+.about-us article {
+	width: 415px;
+	margin: 0 32px;
+}
+
+.description-container h3 {
+	font-family: 'lato', Tahoma, sans-serif;;
+	font-size: 36px;
+	color: rgba(48, 48, 48, 255);
+	text-align: left;
+	margin: 0;
+}
+
+.description-container p {
+	font-family: 'Latothin', Tahoma, sans-serif;
+	font-size: 17px;
+	color: rgba(116, 116, 116, 255);
+	text-align: justify;
+	line-height: 27px;
+}
+
+.our-team-container {
+	display: flex;
+  flex-flow: row wrap;
+	justify-content: space-around;
+	width: 740px;
+	height: 200px;
+	padding-left: 95px;
+	box-sizing: border-box;
+}
+
+.our-team.junior {
+	margin-right: 50px;
+}
+
+.our-team.middle {
+	margin-right: 50px;
+}
+
+.our-team-container img {
+	display: block;
+	margin: 0 auto;
+	border: 4px solid #e5e5e5;
+	border-radius: 50%;
+}
+
+.our-team .name {
+  text-align: center;
+	margin: 0 auto;
+	font-size: 17px;
+	font-family: 'Latosemibold', Tahoma, sans-serif;
+	color: rgba(48, 48, 48, 255);
+}
+
+.our-team .profession {
+  font-family: 'Latoregular', Tahoma, sans-serif;;
+  text-align: center;
+	margin: 4px  0;
+	font-size: 15px;
+	color: rgba(142, 142, 142, 255);
+}
+
+.icons span {
+	display: inline-block;
+	padding: 5px;
+	font-size: 14px;
+	color: rgba(191, 191, 191, 255);
+}
+
+.icons a {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.icons a span:hover {
+	color: rgb(31, 137, 186);
+}
+
+/*Slaider*/
+
+.slider { /*положение слайдера*/
+  position: relative;
+	text-align: center;
+  top: 10px;
+  width: 100%;
+	margin: auto;
+}
+
+.slides article{ /*все изображения справа друг от доруга*/
+	width: 33%;
+	float: left;
+}
+
+.slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 300%;
+	line-height: 0;
+}
+
+.slides_overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{ /*размер изображений слайдера*/
+	width: 100%;
+}
+
+.desktop:checked ~ .slider{ /*размер всего слайдера*/
+	min-width: 100vh; /*максимальнная длинна*/
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ .slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ .slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ .slides .image{
+	margin-left: -200%;
+}
+
+.slides_controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+.slides_active label{ /*стиль отдельного переключателя*/
+	border-radius: 10px; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+.slides_active{ /*расположение блока с переключателями*/
+	margin: 23% 0 0;
+	text-align: center;
+}
+
+.slides_active label:hover{ /*поведение чекбокса при наведении*/
+	background: #76c8ff;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ .slides_active label:nth-child(1),
+#switch2:checked ~ .slides_active label:nth-child(2),
+#switch3:checked ~ .slides_active label:nth-child(3){
+	background: #FFF;
+	border-color: #FFF;
+}
+
+.slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+/*Slaider_2*/
+
+.slaider {
+  background-color: black;
+  position: relative;
+}
+
+.slaider::after {
+  content: '';
+  background:  url('../../images/slaider-back.jpg');
+  background-repeat: no-repeat;
+  background-position: center 70%;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+}
+
+.slaider_container {
+  width: 100%;
+  height: 190px;
+  position: relative;
+  padding: 25px;
+}
+
+.slaider_container::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url("../../images/XRaES.png") repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .1;
+  pointer-events: none;
+}
+
+.slaider_inner {
+  margin: auto;
+  width: 900px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sometext {
+  opacity: 1;
+  font-family: 'Latolight', Tahoma, sans-serif;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.name {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.name_person {
+    font-family: 'Latobold', Tahoma, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    color: #FFF;
+}
+
+.name_person::after {
+  content: '';
+  display: block;
+  background-color: #FFF;
+  width: 1px;
+  height: 20px;
+  right: -10px;
+  top: 0;
+  position: absolute;
+}
+
+.slaider_circles {
+  padding-top: 20px;
+}
+
+.slaider_circles :nth-child(2) {
+  margin: auto 10px;
+}
+
+/*Functions*/
+
+.functions {
+	height: 243px;
+}
+
+.functions ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+	flex-grow: 1;
+	width: 1300px;
+	margin: 97px auto 0;
+}
+
+.functions ul li {
+    list-style-type: none;
+    align-self: center;
+}
+
+.functions li a {
+   	display: inline-block;
+	width: 230px;
+	height: 150px;
+	padding:0;
+   	text-decoration: none;
+}
+
+.functions a > img {
+	display: block;
+	margin: 0 auto;
+}
+
+p.name-function {
+  font-family: 'Latoheavy', Tahoma, sans-serif;;
+  text-align: center;
+	margin-bottom: 0;
+	font-size: 18px;
+	color: rgba(48, 48, 48, 255);
+}
+
+p.description-function {
+  text-align: center;
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Latolight', Tahoma, sans-serif;
+	color: rgba(126, 126, 126, 255);
 }
 
 /*Footer*/
