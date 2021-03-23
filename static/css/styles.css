@@ -341,6 +341,9 @@ h1, h2, h3, h4 h5, h6 {
 .new_domain_fullname_type_select{
 	font-family: 'Lato', sans-serif;
 	float:right;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	outline: none;
 	border: none;
 	border-left:solid;
 	border-width: 1px;
