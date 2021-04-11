@@ -85,6 +85,16 @@
     font-style: normal;
 }
 
+@font-face { 
+  font-family: 'Montserrat ExtraLight'; 
+  src: url('../fonts/Montserrat/Montserrat-ExtraLight.eot');                                    /* IE9 Compat Modes */ 
+  src: url('../fonts/Montserrat/Montserrat-ExtraLight.woff2') format('woff2'),                  /* Новейшие браузеры */ 
+       url('../fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff'),                    /* Новые браузеры и IE9+ */ 
+       url('../fonts/Montserrat/Montserrat-ExtraLight.ttf')  format('truetype');               /* Старые Safari, Android, iOS */ 
+  font-weight: 100; 
+  font-style: normal; 
+}
+
 body {
     margin: 0;
 }
@@ -244,7 +254,7 @@ h1, h2, h3, h4 h5, h6 {
 
 .left_diagonal_btn {
 	background-color: #21424a;
-	clip-path: polygon(0% 0%, 51.25% 0%, 48.75% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 51.5% 0%, 49% 100%, 0% 100%);
 	z-index: 2;
 }
 
@@ -286,13 +296,13 @@ h1, h2, h3, h4 h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato Heavy', sans-serif;
 }
 
 .new_domain_inner{
     width: 880px;
 	margin: 0 auto;
-    margin-top: 90px;
+    /*margin-top: 90px;*/
 }
 
 .new_domain_title{
@@ -305,55 +315,74 @@ h1, h2, h3, h4 h5, h6 {
 }
 
 .new_domain_subtitle{
-	font-size: 16px;
+	font-size: 15.5px;
     color: #a2a2a2;
     text-align: center;
     position: relative;
 	margin-bottom: 50px;
+	font-family: 'Montserrat ExtraLight'; /***************************************************************************/
+}
+
+.new_domain_delimiter{
+	height: 40px;
 }
 
 .new_domain_fullname{
+	width: 880px;
+	height: 50px;
 	border: solid;
 	padding: 7px;
 	border-width: 1px;
 	border-color: #d9d9d9;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
+	font-size: 15px;
+	vertical-align: middle;
+	display: table;
 }
 
 .new_domain_fullname_www{
-	font-family: 'Lato', sans-serif;
-	border-right:solid;
-	border-width: 1px;
-	border-color: #d9d9d9;
-	font-size: 16px;
+	font-family: 'Lato Regular', sans-serif;
+	display: table-cell;
     color: #a2a2a2;
 	opacity: 0.7;
+	width: 55px;
+	margin-right: 15px;
+	text-align: center;
 }
 
 .new_domain_fullname_namefield{
-	font-family: 'Lato', sans-serif;
+	display: table-cell;
+	font-family: 'Lato Semibold', sans-serif;
+	font-size: 15px;
 	border: none;
 	outline:none;
 	color: #454444;
-	width: 760px;
+	width: 740px;
+	height: 30px;
+	border-right:solid;
+	border-left:solid;
+	border-width: 1px;
+	border-color: #d9d9d9;
+	padding-left: 20px;
 }
 
 .new_domain_fullname_type_select{
-	font-family: 'Lato', sans-serif;
+	height: 30px;
+	font-family: 'Lato Bold', sans-serif;
 	float:right;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	outline: none;
 	background: transparent;
 	border: none;
-	border-left:solid;
-	border-width: 1px;
-	border-color: #d9d9d9;
 	outline: none;
 	font-size: 16px;
     color: #a2a2a2;
 	opacity: 0.7;
 	cursor: pointer;
+	text-align: center;
+	padding-left: 13px;
+	width: 67px;
 }
 
 .new_domain_type_table{
@@ -369,11 +398,12 @@ h1, h2, h3, h4 h5, h6 {
 }
 
 .new_domain_type_table_cell{
+	text-align: center;
 	vertical-align: middle;
-	font-size: 16px;
+	font-size: 14px;
     color: #d9d9d9;
 	width: 190px;
-
+	font-family: 'Lato Regular', sans-serif;
 }
 
 .left_cell{
@@ -965,4 +995,9 @@ p.description-function {
 	border-color: #686868;
 	border-width: 1px;
 	height: 130px;
+}
+
+.footer_phone_number{
+	font-family: 'Lato Semibold', sans-serif;
+	font-weight: bolder;
 }
